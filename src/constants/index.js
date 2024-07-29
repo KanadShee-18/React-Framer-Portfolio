@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -79,13 +80,14 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind"],
   },
-  // {
-  //   title: "Spotify",
-  //   image: project5,
-  //   description:
-  //     "A music streaming service providing access to millions of songs,playlists, and podcasts, with a user-friendly interface designed using HTML and CSS.",
-  //   technologies: ["HTML", "Bootstrap"],
-  // },
+  {
+    title: "Spotify",
+    image: project5,
+    link: "https://kanadshee-18.github.io/SPOTIFY/",
+    description:
+      "A music streaming service providing access to millions of songs,playlists, and podcasts, with a user-friendly interface designed using HTML and CSS.",
+    technologies: ["HTML", "Bootstrap"],
+  },
 ];
 
 export const CONTACT = {

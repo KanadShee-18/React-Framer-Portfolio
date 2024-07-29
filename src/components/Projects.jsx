@@ -10,7 +10,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-5xl"
+        className="my-20 text-center text-5xl bg-gradient-to-r from-blue-800 via-blue-300 to-neutral-200 bg-clip-text tracking-tight text-transparent pb-2"
       >
         Projects
       </motion.h1>
@@ -25,8 +25,8 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                width={150}
-                height={150}
+                width={200}
+                height={200}
                 alt={project.title}
                 className="mb-6 rounded"
               />
@@ -55,7 +55,7 @@ const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-400"
+                  className="mr-2 rounded-md bg-neutral-900 border-2 border-purple-900 px-2 py-1 text-sm font-medium text-purple-400 hover:cursor-pointer hover:bg-neutral-800 hover:text-purple-300"
                 >
                   {tech}
                 </span>
