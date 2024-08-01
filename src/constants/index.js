@@ -83,10 +83,10 @@ export const PROJECTS = [
   {
     title: "Spotify",
     image: project5,
-    link: "https://kanadshee-18.github.io/SPOTIFY/",
+    link: "https://spotify-frontend-izzd.onrender.com/",
     description:
-      "A music streaming service providing access to millions of songs,playlists, and podcasts, with a user-friendly interface designed using HTML and CSS.",
-    technologies: ["HTML", "Bootstrap"],
+      "A FULL Stack music streaming service providing access to millions of songs,playlists and podcasts, with a user-friendly interface and added an admin panel to manage(upload, delete) all the songs and albums.",
+    technologies: ["React", "MongoDb", "HTML", "Tailwind", "HTML", "CSS"],
   },
 ];
 
