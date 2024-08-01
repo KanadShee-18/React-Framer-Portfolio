@@ -2,7 +2,6 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
-import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -57,12 +56,12 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Netflix",
+    title: "Spotify",
     image: project2,
-    link: "#",
+    link: "https://spotify-frontend-izzd.onrender.com/",
     description:
-      "A global streaming platform offering a vast library of movies, TVshows, documentaries, and original content accessible via subscription across multiple devices.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
+      "A FULL Stack music streaming service providing access to millions of songs,playlists and podcasts, with a user-friendly interface and added an admin panel to manage(upload, delete) all the songs and albums.",
+    technologies: ["React", "MongoDb", "HTML", "Tailwind", "HTML", "CSS"],
   },
   {
     title: "Taste Buddy",
@@ -79,14 +78,6 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind"],
-  },
-  {
-    title: "Spotify",
-    image: project5,
-    link: "https://spotify-frontend-izzd.onrender.com/",
-    description:
-      "A FULL Stack music streaming service providing access to millions of songs,playlists and podcasts, with a user-friendly interface and added an admin panel to manage(upload, delete) all the songs and albums.",
-    technologies: ["React", "MongoDb", "HTML", "Tailwind", "HTML", "CSS"],
   },
 ];
 
