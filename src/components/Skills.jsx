@@ -33,7 +33,10 @@ const Skills = () => {
         className="flex flex-wrap justify-center"
       >
         {skillsData.map((skill, index) => (
-          <div
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ duration: 1, delay: 0.3 }}
             key={index}
             className="m-4 w-full md:w-1/2 lg:w-1/4 flex flex-col"
           >
@@ -43,7 +46,7 @@ const Skills = () => {
               </h3>
               <p className="text-blue-300">{skill.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

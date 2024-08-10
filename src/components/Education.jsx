@@ -42,12 +42,15 @@ const Education = () => {
         </motion.h2>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.8 }}
           className="bg-gradient-to-b from-gray-950 to-gray-800 text-gray-400 rounded-3xl p-6 mx-auto w-full max-w-4xl shadow-md shadow-neutral-500/50"
         >
           {educationData.map((item, index) => (
-            <div
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               key={index}
               className="mb-6 border-b border-gray-600 pb-4 last:border-none"
             >
@@ -58,7 +61,7 @@ const Education = () => {
               <p className="text-neutral-400">{item.duration}</p>
               {item.cgpa && <p>CGPA: {item.cgpa}</p>}
               {item.marks && <p>Marks: {item.marks}</p>}
-            </div>
+            </motion.div>
           ))}
         </motion.div>
       </div>

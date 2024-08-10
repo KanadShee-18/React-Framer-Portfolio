@@ -9,6 +9,7 @@ import {
   FaHeart,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import resume from "../assets/My_Resume.pdf";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -54,7 +55,7 @@ const Contact = () => {
               transition={{ duration: 1.2 }}
             >
               <a
-                href="Images/my-cv.pdf"
+                href={resume}
                 download
                 className="btn btn2 bg-neutral-900 text-purple-400 py-4 px-6 rounded text-[18px] border-2 border-purple-600 hover:text-neutral-900 hover:bg-purple-400 hover:font-semibold active:bg-neutral-900 active:text-purple-500"
               >
