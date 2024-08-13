@@ -66,7 +66,7 @@ export const PROJECTS = [
   {
     title: "Taste Buddy",
     image: project3,
-    link: "",
+    link: "https://taste-buddy-mu.vercel.app/",
     description:
       "A food delivery app connects users with local restaurants, allowing them to order meals for delivery or pickup with ease. It provides a seamless experience for browsing menus, placing orders, and tracking delivery in real-time.",
     technologies: ["HTML", "CSS", "React", "Tailwind"],
