@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -78,6 +79,21 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap", "Tailwind"],
+  },
+  {
+    title: "Netflix Clone with Gpt Search",
+    image: project5,
+    link: "https://videostreaming-gpt-clone-seven.vercel.app/",
+    description:
+      "Developed a Netflix clone using React, Redux Toolkit, and Tailwind CSS, providing a seamless user experience. The application features user authentication, where users must log in to access content. Upon each refresh, a movie trailer is automatically played, enhancing engagement. Implemented a robust movie search functionality using the Gemini API for intelligent search suggestions, with movie data sourced from the TMDB API. The project demonstrates strong proficiency in state management, API integration, and responsive UI design.",
+    technologies: [
+      "React",
+      "Redux Toolkit",
+      "Tailwind",
+      "Firebase Authentication",
+      "TMDB API",
+      "Gemini API",
+    ],
   },
 ];
 
