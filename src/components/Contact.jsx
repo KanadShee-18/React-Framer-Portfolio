@@ -77,7 +77,7 @@ const Contact = () => {
                                 name="Name"
                                 placeholder="Your Name"
                                 required
-                                className="w-full p-2 mb-4 text-purple-400 border border-purple-600 rounded bg-gradient-to-b from-slate-950 to-gray-900 bg-opacity-20"
+                                className="w-full p-2 mb-4 text-purple-400 border border-purple-600 rounded bg-gradient-to-b from-slate-950 to-gray-900"
                             />
                             <motion.input
                                 whileInView={{ opacity: 1, x: 0 }}
