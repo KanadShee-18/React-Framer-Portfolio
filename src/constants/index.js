@@ -64,11 +64,11 @@ export const PROJECTS = [
             "Developed a Netflix clone using React, Redux Toolkit, and Tailwind CSS, providing a seamless user experience. The application features user authentication, where users must log in to access content. Upon each refresh, a movie trailer is automatically played, enhancing engagement. Implemented a robust movie search functionality using the Gemini API for intelligent search suggestions, with movie data sourced from the TMDB API. The project demonstrates strong proficiency in state management, API integration, and responsive UI design.",
         technologies: [
             "React",
-            "Redux Toolkit",
+            "Redux",
             "Tailwind",
-            "Firebase Authentication",
-            "TMDB API",
-            "Gemini API",
+            "Firebase",
+            "TMDB",
+            "Gemini",
         ],
     },
     {
