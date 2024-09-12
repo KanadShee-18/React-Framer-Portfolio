@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-b-neutral-900 pb-3">
-      <h1 className="my-20 text-center text-5xl bg-gradient-to-r from-blue-800 via-blue-300 to-neutral-200 bg-clip-text tracking-tight text-transparent pb-2">
+    <div className="pb-3 border-b-neutral-900">
+      <h1 className="pb-2 my-20 text-5xl tracking-tight text-center text-transparent bg-gradient-to-r from-blue-800 via-blue-300 to-neutral-200 bg-clip-text">
         About <span className="text-neutral-500">Me</span>
       </h1>
       <div className="flex flex-wrap">
@@ -27,7 +27,9 @@ const About = () => {
           className="w-full lg:w-1/2"
         >
           <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6 text-[18px]">{ABOUT_TEXT}</p>
+            <p className="my-2 max-w-xl py-6 text-[20px] tracking-tighter text-transparent bg-gradient-to-r from-purple-400 via-teal-400 to-pink-300 bg-clip-text font-medium">
+              {ABOUT_TEXT}
+            </p>
           </div>
         </motion.div>
       </div>
