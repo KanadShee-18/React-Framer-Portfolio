@@ -13,28 +13,28 @@ const Navbar = () => {
       <div className="flex items-center justify-center gap-4 m-8 text-2xl">
         <a
           href="https://www.linkedin.com/in/kanad-shee-aa8606246/"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 hover:text-purple-500"
+          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#526ce0] hover:text-purple-500"
           target="_blank"
         >
           <FaLinkedin />
         </a>
         <a
           href="https://github.com/KanadShee-18"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 hover:text-purple-500"
+          className="transition duration-500 transform cursor-pointer hover:scale-125  text-[#526ce0] hover:text-purple-500"
           target="_blank"
         >
           <FaGithub />
         </a>
         <a
           href="https://www.instagram.com/kanadshee/"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 hover:text-purple-500"
+          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#526ce0] hover:text-purple-500"
           target="_blank"
         >
           <FaInstagram />
         </a>
         <a
           href="https://twitter.com/Kanad_Shee"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 hover:text-purple-500"
+          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#526ce0] hover:text-purple-500"
           target="_blank"
         >
           <FaSquareXTwitter />
