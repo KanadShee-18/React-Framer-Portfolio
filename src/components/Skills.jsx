@@ -40,7 +40,7 @@ const Skills = () => {
             key={index}
             className="flex flex-col w-full m-4 md:w-1/2 lg:w-1/4"
           >
-            <div className="flex-grow p-6 text-gray-400 transition-all duration-300 ease-in-out rounded-lg shadow-lg cursor-pointer bg-gradient-to-b from-gray-800 to-gray-700 shadow-neutral-500/50 hover:-translate-y-2">
+            <div className="flex-grow p-6 text-gray-400 transition-all duration-300 ease-in-out rounded-lg shadow-lg cursor-pointer bg-[#1e2233] shadow-[#242e50] hover:-translate-y-2 hover:bg-[#262b44]">
               <h3 className="mb-2 text-xl font-semibold text-pink-500">
                 {skill.category}
               </h3>

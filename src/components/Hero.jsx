@@ -19,7 +19,7 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="pb-4 border-b border-neutral-900 lg:mb-35">
+    <div className="relative pb-4 border-b border-neutral-900 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -50,15 +50,22 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+          <motion.div className="relative flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
               alt="Kanad Shee"
+              className="relative z-30"
             />
-          </div>
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              className="absolute z-0 w-[70%] h-[90%] bg-[#2d3f77] left-14 rounded-3xl blur-[40px] -top-7"
+            ></motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

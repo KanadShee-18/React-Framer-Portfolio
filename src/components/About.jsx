@@ -2,6 +2,7 @@ import React from "react";
 import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const About = () => {
   return (
@@ -16,8 +17,14 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2 lg:p-8"
         >
-          <div className="flex items-center justify-center">
-            <img className="rounded-2xl" src={aboutImg} alt="about_img" />
+          <div className="relative flex items-center justify-center">
+            <img className="z-30 rounded-2xl" src={aboutImg} alt="about_img" />
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              className="absolute z-0 w-[70%] h-[90%] bg-[#285d99] right-16 rounded-3xl blur-[40px] -top-3"
+            ></motion.div>
           </div>
         </motion.div>
         <motion.div
@@ -28,7 +35,17 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <p className="my-2 max-w-xl py-6 text-[20px] tracking-tighter text-transparent bg-gradient-to-r from-purple-400 via-teal-400 to-pink-300 bg-clip-text font-medium">
-              {ABOUT_TEXT}
+              <TypeAnimation
+                sequence={[ABOUT_TEXT, 1000, ""]}
+                repeat={Infinity}
+                cursor={true}
+                style={{
+                  whiteSpace: "pre-line",
+                  display: "block",
+                }}
+                omitDeletionAnimation={true}
+              />
+              {/* {ABOUT_TEXT} */}
             </p>
           </div>
         </motion.div>
