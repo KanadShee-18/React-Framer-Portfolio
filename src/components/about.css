@@ -1,0 +1,19 @@
+@keyframes lineAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-line {
+  animation: lineAnimation 10s linear infinite; /* Adjust the duration as needed for speed */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Optional glow effect */
+  height: 2px; /* Set the height of the line */
+  background: linear-gradient(
+    to right,
+    #9b59b6,
+    #e74c3c
+  ); /* Optional gradient background */
+}

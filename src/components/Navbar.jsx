@@ -1,6 +1,8 @@
 import logo from "../assets/kanadsheelogo.png";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
@@ -15,34 +17,44 @@ const Navbar = () => {
 
       {/* Social icons section */}
       <div className="flex items-center justify-center gap-4 text-2xl">
-        <a
-          href="https://www.linkedin.com/in/kanad-shee-aa8606246/"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#6f89ff] hover:text-purple-500"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/KanadShee-18"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#6f89ff] hover:text-purple-500"
-          target="_blank"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.instagram.com/kanadshee/"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#6f89ff] hover:text-purple-500"
-          target="_blank"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="https://twitter.com/Kanad_Shee"
-          className="transition duration-500 transform cursor-pointer hover:scale-125 text-[#6f89ff] hover:text-purple-500"
-          target="_blank"
-        >
-          <FaSquareXTwitter />
-        </a>
+        {[
+          {
+            icon: <FaLinkedin />,
+            href: "https://www.linkedin.com/in/kanad-shee-aa8606246/",
+            delay: 1.2,
+          },
+          {
+            icon: <FaGithub />,
+            href: "https://github.com/KanadShee-18",
+            delay: 0.8,
+          },
+          {
+            icon: <FaInstagram />,
+            href: "https://www.instagram.com/kanadshee/",
+            delay: 0.4,
+          },
+          {
+            icon: <FaSquareXTwitter />,
+            href: "https://twitter.com/Kanad_Shee",
+            delay: 0,
+          },
+        ].map(({ icon, href, delay }, index) => (
+          <motion.a
+            key={index}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            initial={{
+              opacity: 0,
+              x: index % 2 !== 0 ? -200 : 70,
+              y: index % 2 === 0 ? -30 : 0,
+            }}
+            transition={{ duration: 0.5, delay }}
+            href={href}
+            className="transition navIcon duration-500 cursor-pointer text-[#6f89ff] hover:text-[#dd246b]"
+            target="_blank"
+          >
+            {icon}
+          </motion.a>
+        ))}
       </div>
     </nav>
   );

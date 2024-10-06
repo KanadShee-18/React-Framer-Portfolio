@@ -3,6 +3,7 @@ import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import "./about.css";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
         >
           <div className="relative flex items-center justify-center">
             <img className="z-30 rounded-2xl" src={aboutImg} alt="about_img" />
+
             <motion.div
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -27,6 +29,7 @@ const About = () => {
             ></motion.div>
           </div>
         </motion.div>
+
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
