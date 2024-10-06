@@ -18,12 +18,18 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className="container px-4 py-12 mx-auto mb-36">
+    <motion.div
+      initial={{ x: "-100vw", y: "100vh", opacity: 0 }} // Starts from bottom-left
+      animate={{ x: 0, y: 0, opacity: 1 }} // Moves to the center
+      exit={{ x: "-100vw", y: "-100vh", opacity: 0 }} // Exits towards top-left
+      transition={{ duration: 1 }} // Adjust speed as needed
+      className="container px-4 py-12 mx-auto mb-36"
+    >
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
-        className="pb-2 my-20 text-5xl tracking-tight text-center text-transparent bg-gradient-to-r from-blue-800 via-blue-300 to-blue-200 bg-clip-text"
+        className="pb-2 mt-20 mb-10 text-5xl tracking-tight text-center text-transparent bg-gradient-to-r from-blue-800 via-blue-300 to-blue-200 bg-clip-text"
       >
         Skills
       </motion.h2>
@@ -50,7 +56,7 @@ const Skills = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -21,17 +21,17 @@ const Navbar = () => {
           {
             icon: <FaLinkedin />,
             href: "https://www.linkedin.com/in/kanad-shee-aa8606246/",
-            delay: 1.2,
+            delay: 1.5,
           },
           {
             icon: <FaGithub />,
             href: "https://github.com/KanadShee-18",
-            delay: 0.8,
+            delay: 0.7,
           },
           {
             icon: <FaInstagram />,
             href: "https://www.instagram.com/kanadshee/",
-            delay: 0.4,
+            delay: 0.2,
           },
           {
             icon: <FaSquareXTwitter />,
@@ -44,10 +44,10 @@ const Navbar = () => {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             initial={{
               opacity: 0,
-              x: index % 2 !== 0 ? -200 : 70,
-              y: index % 2 === 0 ? -30 : 0,
+              x: index === 3 ? 0 : index % 2 === 0 ? -200 : 70,
+              y: index === 3 ? 0 : index % 2 !== 0 ? -30 : 0,
             }}
-            transition={{ duration: 0.5, delay }}
+            transition={{ duration: index === 0 ? 0 : 0.5, delay }}
             href={href}
             className="transition navIcon duration-500 cursor-pointer text-[#6f89ff] hover:text-[#dd246b]"
             target="_blank"

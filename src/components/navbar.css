@@ -1,3 +1,6 @@
 .navIcon:hover {
   transform: scale(1.3) !important;
 }
+.navIcon:active {
+  rotate: 20deg !important;
+}
