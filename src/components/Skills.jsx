@@ -2,22 +2,23 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skillsData = [
-  { category: "Web Development", description: "Developing Web Applications" },
+  { category: "Languages", description: "C, C++, Java, Python" },
   {
-    category: "MERN Stack",
+    category: "Web Technologies",
     description:
-      "Having expertise in HTML, CSS (Tailwind, Bootstrap), NextJs, NodeJs, ExpressJs, SQL, MongoDB",
+      "Having expertise in HTML5, CSS, Tailwind, Bootstrap, JavaScript",
   },
   {
-    category: "DSA",
-    description: "Solving DSA Problems in LeetCode, GeekForGeeks, CodingNinja",
+    category: "Tech Stack",
+    description:
+      "Skilled teck stacks like React JS, Node JS, Express JS, MongoDB",
   },
   //   { category: "Languages", description: "C++, Java, Python, JavaScript" },
 ];
 
 const Skills = () => {
   return (
-    <div className="container px-4 py-12 mx-auto">
+    <div className="container px-4 py-12 mx-auto mb-36">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
@@ -34,18 +35,18 @@ const Skills = () => {
       >
         {skillsData.map((skill, index) => (
           <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1, delay: 0.3 }}
             key={index}
             className="flex flex-col w-full m-4 md:w-1/2 lg:w-1/4"
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -300 : 300, y: 400 }}
+            transition={{ duration: 1, delay: 0.2 }}
           >
-            <div className="flex-grow p-6 text-gray-400 transition-all duration-300 ease-in-out rounded-lg shadow-lg cursor-pointer bg-[#1e2233] shadow-[#242e50] hover:-translate-y-2 hover:bg-[#262b44]">
+            <motion.div className="flex-grow p-6 text-gray-400 transition-all duration-300 ease-in-out rounded-md shadow-lg cursor-pointer bg-[#1e2233] shadow-[#2d3b68] hover:bg-[#2c3250]">
               <h3 className="mb-2 text-xl font-semibold text-pink-500">
                 {skill.category}
               </h3>
               <p className="text-blue-300">{skill.description}</p>
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </motion.div>

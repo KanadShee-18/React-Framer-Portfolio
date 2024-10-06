@@ -33,7 +33,7 @@ const About = () => {
           transition={{ duration: 0.7 }}
           className="w-full lg:w-1/2"
         >
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center md:h-[500px] h-[700px] lg:h-auto lg:justify-start">
             <p className="my-2 max-w-xl py-6 text-[20px] tracking-tighter text-transparent bg-gradient-to-r from-purple-400 via-teal-400 to-pink-300 bg-clip-text font-medium">
               <TypeAnimation
                 sequence={[ABOUT_TEXT, 1000, ""]}
