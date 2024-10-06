@@ -6,7 +6,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-[1000] top-0 left-0 right-0 w-11/12 flex items-center py-3 mb-20 bg-opacity-80 rounded-3xl bg-[#1a1a24] justify-between px-8 mx-auto">
+    <nav className="fixed z-[1000] top-0 left-0 right-0 w-11/12 flex items-center py-3 mb-20 bg-opacity-80 rounded-3xl bg-[#1a1a24] justify-between md:px-8 px-2 mx-auto">
       {/* Logo section */}
       <div className="flex items-center flex-shrink-0">
         <img src={logo} className="h-10 mx-2" alt="logo" />
